@@ -19,7 +19,6 @@
 			<footer id="footer"></footer>
 		</section>
 		<footer id="info">
-			<p>Double-click to edit a todo</p>
 			<p>Written by <a href="https://github.com/addyosmani">Addy Osmani</a></p>
 			<p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
 		</footer>
@@ -27,6 +26,7 @@
 			<div class="view">
 				<input class="toggle" type="checkbox" <%= completed ? 'checked' : '' %>>
 				<label><%- title %> <%= completed ? " -- done" : '' %></label>
+				<button class="edit-btn"></button>
 				<button class="destroy"></button>
 			</div>
 			<input class="edit" value="<%- title %>">
